@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>diTetraTech proto</title>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,200,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic'
+          rel='stylesheet' type='text/css'>
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="bower_components/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="tetra-modules/tetraMenu/tetra.menu.css">
+    <link rel="stylesheet" href="tetra-modules/tetraFramework/tetra.framework.css">
+    <link rel="stylesheet" href="app/app.css">
+</head>
+
+
+<body class="container-fluid">
+
+<tetra-framework t-title="diTetra Tech" t-icon-file="img/j3d-logo-white.svg"
+                 t-subtitle="100% Free Business App">
+    <tetra-menu>
+        <tetra-menu-item label="Dashboard" icon="fa-dashboard"></tetra-menu-item>
+        <tetra-menu-item label="Inventory" icon="fa-bar-chart"></tetra-menu-item>
+        <tetra-menu-item label="Expenses" icon="fa-dollar"></tetra-menu-item>
+    </tetra-menu>
+</tetra-framework>
+
+
+
+
+<!------------------------------------>
+<!------- JavaScript Libraries ------->
+<!------------------------------------>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+
+
+
+<!--------------------------------->
+<!------- Custom JavaScript ------->
+<!--------------------------------->
+
+<!-- tetra menu -->
+<script src="tetra-modules/tetraMenu/tetra.menu.mod.js"></script>
+<script src="tetra-modules/tetraMenu/tetra.menu.ctrl.js"></script>
+<script src="tetra-modules/tetraMenu/tetra.menu.dir.js"></script>
+<script src="tetra-modules/tetraMenu/tetra.menu.item.dir.js"></script>
+
+<!-- tetra dashboard -->
+<script src="tetra-modules/tetraDashboard/tetra.dashboard.mod.js"></script>
+
+<!-- tetra framework -->
+<script src="tetra-modules/tetraFramework/tetra.framework.mod.js"></script>
+<script src="tetra-modules/tetraFramework/tetra.framework.dir.js"></script>
+<script src="tetra-modules/tetraFramework/tetra.framework.ctrl.js"></script>
+
+<!-- application -->
+<script src="app/app.mod.js"></script>
+<script src="app/app.config.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "ditetra",
+  "authors": [
+    "Julius Alvarado <angularjs.uiux@gmail.com>"
+  ],
+  "description": "web app",
+  "main": "",
+  "keywords": [
+    "javascript"
+  ],
+  "license": "MIT",
+  "homepage": "www.ditetra.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,61 @@
+.t-title-bar {
+    background-color: #444;
+    padding: 0 20px;
+    border-bottom: 2px solid #434343;
+}
+
+.t-title-area {
+    display: inline-block;
+    text-align: center;
+}
+
+.t-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+    vertical-align: top;
+    border: 1px solid #999999;
+}
+
+.t-logo-title {
+    margin-top: 4px;
+    font-size: 24px;
+}
+
+.t-logo-subtitle {
+    font-size: 12px;
+    margin-top: -12px;
+}
+
+.t-right-side-controls {
+    /*
+     * This will vertically center, 60px is bigger that .t-icon */
+    line-height: 60px;
+}
+
+.t-right-side-controls > div {
+    text-align: center;
+}
+
+.t-logo-area {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    /*
+     * for larger screens */
+    .t-right-side-controls > div {
+        text-align: right;
+    }
+
+    .t-logo-area {
+        text-align: left;
+    }
+}
+
+
+
+
+/*
+ * end of tetra.framework.css */

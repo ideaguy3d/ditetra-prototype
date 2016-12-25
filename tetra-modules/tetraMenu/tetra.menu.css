@@ -1,0 +1,57 @@
+.tetra-menu-area {
+    position: relative;
+    background-color: #444;
+    padding-left: 0;
+    width: 200px;
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+.tetra-menu-area .btn:hover {
+    color: cornflowerblue;
+}
+
+.tetra-menu {
+    list-style-type: none;
+    vertical-align: top;
+}
+
+.tetra-menu ul {
+    display: inline;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tetra-menu li div {
+    display: inline-block;
+    width: 90%;
+    padding-left: 16px;
+}
+
+.tetra-selectable-item {
+    line-height: 3em;
+    cursor: pointer;
+}
+
+.tetra-selectable-item:hover {
+    background-color: #555;
+}
+
+.tetra-noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tetra-menu-icon {
+    margin-right: 10px;
+}
+
+
+
+
+
+/*
+ *  */
