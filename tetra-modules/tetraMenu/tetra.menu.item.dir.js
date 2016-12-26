@@ -8,11 +8,23 @@ angular.module('tetraMenu').directive('tetraMenuItem', [
             require: '^tetraMenu',
             scope: {
                 label: '@',
-                icon: '@'
+                icon: '@',
+                route: '@'
             },
             templateUrl: 'tetra-modules/tetraMenu/temp.tetra.menu.item.html',
             link: function(scope, elem, attr, ctrl) {
-
+                // elem is a jQuery wrapped obj which is why .on() can be called.
+                elem.on('click', function(evt){
+                    scope.isActive = function(){
+                        return elem === ctrl.getActiveElem();
+                    };
+                    evt.stopPropagation();
+                    evt.preventDefault(); 
+                    scope.$apply(function(){
+                        ctrl.setActiveElement(elem);
+                        ctrl.setRoute(scope.route);
+                    });
+                })
             }
         }
     }

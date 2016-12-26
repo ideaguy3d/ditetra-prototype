@@ -5,7 +5,9 @@
 
 angular.module('tetraFramework').controller('tetraFrameworkCtrl', ['$scope',
     function($scope){
-
+        $scope.$on('tetra-menu-item-selected-event', function(evt, data){
+            $scope.routeString = data.route;
+        });
     }
 ]);
 

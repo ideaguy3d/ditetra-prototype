@@ -3,9 +3,21 @@
  */
 "use strict";
 
-angular.module('tetraMenu').controller('tetraMenuCtrl', ['$scope',
-    function($scope){
+angular.module('tetraMenu').controller('tetraMenuCtrl', [
+    '$scope', '$rootScope',
+    function($scope, $rootScope) {
+        this.setActiveElement = function(elem){
+            $scope.activeElement = elem; 
+        };
+        
+        this.setRoute = function(route){
+            $rootScope.$broadcast('tetra-menu-item-selected-event',
+                {route: route});
+        };
 
+        this.getActiveElem = function(){
+            return $scope.activeElement;
+        };
     }
 ]);
 
