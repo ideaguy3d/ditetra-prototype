@@ -1,0 +1,13 @@
+<!-- element that can be clicked on -->
+<li class="tetra-selectable-item" ng-click="clicked()">
+	<div class="tetra-noselect">
+		<i class="fa {{ icon }} tetra-menu-icon"></i>
+		{{ label }}
+		<i class="fa fa-chevron-left tetra-group-indicator-left"
+		   ng-class="{'fa-rotate-270': isOpen}"></i>
+	</div>
+</li>
+<!-- once above element is clicked div will be shown -->
+<div ng-show="isOpen" class="tetra-subitem-sec">
+	<ul ng-transclude=""></ul>
+</div>

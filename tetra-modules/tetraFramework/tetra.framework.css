@@ -6,7 +6,7 @@
 
 .t-title-area {
     display: inline-block;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .t-icon {
@@ -28,6 +28,15 @@
     margin-top: -12px;
 }
 
+@media screen and (max-width: 430px) {
+    .t-icon {
+        /*display: none;*/
+    }
+    .t-logo-title {
+        font-size: 16px;
+    }
+}
+
 .t-right-side-controls {
     /*
      * This will vertically center, 60px is bigger that .t-icon */
@@ -39,7 +48,7 @@
 }
 
 .t-logo-area {
-    text-align: center;
+    /*text-align: center;*/
 }
 
 @media screen and (min-width: 768px) {
@@ -52,6 +61,21 @@
     .t-logo-area {
         text-align: left;
     }
+}
+
+.t-collapsed-menu {
+    display: inline-block;
+    height: 100%;
+}
+
+.t-nav-button {
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    border: 1px solid #3c3c3c;
+    padding: 0;
+    font-size: 24px;
+    color: #777;
 }
 
 

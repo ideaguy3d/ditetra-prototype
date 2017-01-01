@@ -29,6 +29,16 @@
         <tetra-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></tetra-menu-item>
         <tetra-menu-item label="Inventory" icon="fa-bar-chart" route="inventory"></tetra-menu-item>
         <tetra-menu-item label="Expenses" icon="fa-dollar" route="expenses"></tetra-menu-item>
+        <tetra-menu-group label="Strategies" icon="fa-gears">
+            <tetra-menu-item label="Bills" icon="fa-unlink" route="bills"></tetra-menu-item>
+            <tetra-menu-item label="Sales" icon="fa-magic" route="sales"></tetra-menu-item>
+            <tetra-menu-item label="Campaigns" icon="fa-life-ring" route="campaigns"></tetra-menu-item>
+            <tetra-menu-group label="Strategies" icon="fa-gears">
+                <tetra-menu-item label="Bills" icon="fa-unlink" route="bills"></tetra-menu-item>
+                <tetra-menu-item label="Sales" icon="fa-magic" route="sales"></tetra-menu-item>
+                <tetra-menu-item label="Campaigns" icon="fa-life-ring" route="campaigns"></tetra-menu-item>
+            </tetra-menu-group>
+        </tetra-menu-group>
     </tetra-menu>
 </tetra-framework>
 
@@ -53,6 +63,7 @@
 <script src="tetra-modules/tetraMenu/tetra.menu.ctrl.js"></script>
 <script src="tetra-modules/tetraMenu/tetra.menu.dir.js"></script>
 <script src="tetra-modules/tetraMenu/tetra.menu.item.dir.js"></script>
+<script src=tetra-modules/tetraMenu/tetra.menu.group.dir.js></script>
 
 <!-- tetra dashboard -->
 <script src="tetra-modules/tetraDashboard/tetra.dashboard.mod.js"></script>

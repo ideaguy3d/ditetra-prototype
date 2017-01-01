@@ -1,20 +1,35 @@
 <!-- this is the nav and nav at top of pate -->
 <div class="t-title-bar">
-    <div class="row">
-        <div class="t-logo-area col-sm-6">
-            <img ng-src=" {{ tIconFile }}" alt="logo" class="t-icon">
-            <div class="t-title-area">
-                <p class="t-logo-title">{{ tTitle }}</p>
-                <p class="t-logo-subtitle">{{ tSubtitle }}</p>
-            </div>
-        </div>
-        <div class="t-right-side-controls col-sm-6">
-            <div>
-                <button class="btn btn-warning">Button</button>
-                <button class="btn btn-warning">Button</button>
-                <button class="btn btn-warning">Button</button>
-            </div>
-        </div>
-    </div>
+	<div class="row">
+		<div class="t-logo-area col-sm-6">
+			<img ng-src=" {{ tIconFile }}" alt="logo" class="t-icon">
+			<div class="t-title-area">
+				<p class="t-logo-title">{{ tTitle }}</p>
+				<p class="t-logo-subtitle">{{ tSubtitle }}</p>
+			</div>
+			
+			<div ng-if="isMenuButtonVisible" ng-click="menuButtonClicked()"
+			     class="t-collapsed-menu pull-right">
+				<button class="btn t-nav-button">
+					<i class="fa fa-bars"></i>
+				</button>
+			</div>
+		</div>
+		
+		<div class="t-right-side-controls col-sm-6">
+			<div>
+				<button class="btn btn-success">Button</button>
+				<button class="btn btn-primary">Button</button>
+				<button class="btn btn-warning">Button</button>
+			</div>
+		</div>
+	</div>
 </div>
 <div ng-transclude></div>
+
+<div ng-if="!!routeString"
+		style="position: absolute; left: 220px; top:100px; color: #333;">
+	<h1>The Route: {{ routeString }}</h1>
+	<p>The thing about {{ routeString }} is Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores dolore dolorum ipsa iste labore, nam
+	   obcaecati quod reiciendis sapiente totam unde voluptas voluptatem. Beatae ex fugit nam officiis voluptatem.</p>
+</div>

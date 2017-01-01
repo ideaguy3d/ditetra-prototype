@@ -60,6 +60,16 @@
     margin-top: 6px;
 }
 
+.tetra-group-indicator-left {
+    float: right;
+    color: whitesmoke;
+    margin: 14px 2px 0 0;
+}
+
+.tetra-subitem-sec {
+    padding-left: 16px;
+}
+
 
 
 
