@@ -1,3 +1,13 @@
-<div class="tetra-menu-area" ng-show="showMenu">
-    <ul class="tetra-menu" ng-transclude></ul>
+<div class="tetra-menu-area" ng-show="showMenu"
+     ng-class="{'tetra-menu-area-vertical': isVertical,
+		'tetra-menu-area-horizontal': !isVertical}">
+	<ul class="tetra-menu" ng-transclude></ul>
+	
+	<!-- horiz/vert menu button -->
+	<a href="" class="btn tetra-menu-layout-button"
+	   ng-class="{'tetra-layout-button-horizontal': !isVertical}"
+	   ng-click="toggleMenuOrientation()">
+		<i class="fa" ng-class="{'fa-chevron-up': isVertical,
+		'fa-chevron-left': !isVertical}"></i>
+	</a>
 </div>

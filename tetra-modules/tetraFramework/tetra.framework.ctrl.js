@@ -8,6 +8,7 @@ angular.module('tetraFramework').controller('tetraFrameworkCtrl', ['$scope',
     function ($scope, $window, $timeout, $rootScope) {
         $scope.isMenuVisible = true;
         $scope.isMenuButtonVisible = true;
+        $scope.isMenuVert = true;
 
         $scope.$on('tetra-menu-item-selected-event', function (event, data) {
             $scope.routeString = data.route;
@@ -18,6 +19,10 @@ angular.module('tetraFramework').controller('tetraFrameworkCtrl', ['$scope',
             // when the user selects an item in the menu we want
             // the menu to go off screen as well.
             broadcastMenuState();
+        });
+
+        $scope.$on('tetra-menu-orientation-changed-event', function(event, data){
+            $scope.isMenuVert = data.isMenuVert;
         });
 
         jQuery($window).on('resize.tetraFramework', function () {
@@ -56,6 +61,10 @@ angular.module('tetraFramework').controller('tetraFrameworkCtrl', ['$scope',
         $timeout(function () {
             checkWidth();
         }, 0);
+
+        // The Additional Menu Button code to show/hide the menu.
+        // 7:49pm on 1-1-2017, I'll work from this line on in the future
+
     }
 ]);
 
